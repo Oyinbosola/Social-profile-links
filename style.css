@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: hsl(0, 0%, 8%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 960px;
+   font-family: "Inter", sans-serif;
+}
+
+html{
+    font-size: 62.5%; /* 10px = 1rem */
+}
+
+.links-container{
+    width: 36rem;
+    height: 54rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 2.4rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 12%);
+    
+}
+@media(max-width: 375px){
+    .links-container{
+        width: 33rem;
+        height: 55rem;
+    }
+    .links-listing li{
+        width: 28rem;
+    }
+}
+
+@media(max-width: 320px){
+    .links-container{
+        width: 29rem;
+        height: 56rem;
+    }
+}
+
+.image{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.heading-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-and-place{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.name{
+    color: hsl(0, 0%, 100%);
+}
+
+.place{
+    color: hsl(75, 94%, 57%);
+}
+
+.about{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    display: flex;
+    text-align: center;
+}
+
+.links-listing{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-listing li{
+    list-style: none;
+}
+
+.links-listing a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 0.5rem;
+    width: 28rem;
+    height: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+@media(max-width: 320px){
+    .links-listing a{
+        display: flex;
+        width: 26rem;
+    }
+}
+
+.links-listing a:active{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
